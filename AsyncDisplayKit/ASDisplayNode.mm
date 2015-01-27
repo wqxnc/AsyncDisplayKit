@@ -245,7 +245,7 @@ void ASDisplayNodePerformBlockOnMainThread(void (^block)())
 
 - (UIResponder *)nextResponder
 {
-  return self.view.superview;
+  return [self.view nextResponder];
 }
 
 #pragma mark - Core
